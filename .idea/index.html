@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>blog</title><script type=text/javascript>window.onload = function(){
+        //去掉默认的contextmenu事件，否则会和右键事件同时出现。
+        document.oncontextmenu = function(e){
+          e.preventDefault();
+        };
+        document.getElementById("app").onmousedown = function(e){
+          if(e.button ==2){
+            console.log("你点了右键");
+          }
+        }
+      }</script><link href=/static/css/app.2f080c3250e4ab1eea4d5dc7e9f2f3d8.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.d7f5f10c6007a6eed5c2.js></script><script type=text/javascript src=/static/js/vendor.7066c2b4299674eb796a.js></script><script type=text/javascript src=/static/js/app.e65d04158fdb2bb9b15b.js></script></body></html>
